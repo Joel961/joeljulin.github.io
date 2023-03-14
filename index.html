@@ -19,27 +19,25 @@
               <p style="text-align:center">
                 <name>Joel Julin</name>
               </p>
-              <p>I have just graduated from <a href="https://www.pitt.edu">The University of Pittsburgh (Pitt)</a> with a degree in computer science.
-                While at Pitt, I conducted research with the Ci2Cv computer vision lab at Carnegie Mellon's Robotics Institute under
-                <a href="http://www.cs.cmu.edu/~slucey/">Simon Lucey</a> 
-                (now director of the 
-                <a href="https://www.adelaide.edu.au/aiml/">Australian Institute of Machine Learning</a> at 
-                <a href="https://www.adelaide.edu.au/">The University of Adelaide</a>). 
+              <p>I am a Master's student studying Robotics at <a href="https://www.cmu.edu/">Carnegie Mellon University</a> (CMU). I am advised by <a href="https://laszlojeni.com">László Jeni</a> where I work on 
+                3D vision problems. The goal of my research is to allow virtual scenes to be indistinguishable from reality. Prior to CMU, I graduated from <a href="https://www.pitt.edu">The University of Pittsburgh (Pitt)</a> 
+                with a degree in computer science. 
                 <br>
                 <br>
-                I have also had the opportunity to work with
-                <a href="https://laszlojeni.com">László Jeni's</a> computational behavior lab through the 
+                While at Pitt, I conducted research with the Ci2Cv computer vision lab at CMU's RI under
+                <a href="http://www.cs.cmu.edu/~slucey/">Simon Lucey</a> (now director of the <a href="https://www.adelaide.edu.au/aiml/">Australian Institute of Machine Learning</a> at 
+                <a href="https://www.adelaide.edu.au/">The University of Adelaide</a>). Also at Pitt, I had the opportunity to work with
+                <a href="https://laszlojeni.com">Dr. Jeni's</a> computational behavior lab at CMU through the 
                 <a href="https://riss.ri.cmu.edu">Robotics Institute Summer Scholar Program</a> supported by an
-                <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1659774">NSF Grant</a>. Since the conclusion of this 
-                transformative program, I have continued my research within the lab.
+                <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1659774">NSF Grant</a>. 
               </p>
               <p style="text-align:center">
-                <a href="mailto:jmj96@pitt.edu">Email</a> /
-                <a href="https://www.linkedin.com/in/joel-julin-067167223">LinkedIn</a>
+                <a href="mailto:jjulin@andrew.cmu.edu">Email</a> /
+                <a href="https://scholar.google.com/citations?user=2H5lzG4AAAAJ&hl=en&authuser=3">Google Scholar</a>
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a><img style="width:60%;max-width:100%" alt="profile photo" src="images/photo_joel.jpeg" class="hoverZoomLink"></a>
+              <a><img style="width:60%;max-width:100%" alt="profile photo" src="images/profile.JPEG" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -55,6 +53,7 @@
           <tr>
               <td width="50%" valign="middle">
                 <ul>
+                  <li><b>Mar. 2023:</b> I accepted an offer from  <a href="https://www.cmu.edu/">Carnegie Mellon</a> for their M.S. in Robotics program</li>
                   <li><b>Feb. 2023:</b> Work on dynamic light field networks (DyLiN) has been accepted to <a href="https://cvpr2023.thecvf.com">CVPR '23</a></li>
                   <li><b>Dec. 2022:</b> Accepted a full-time position at <a href="https://www.cmu.edu/">CMU</a> to continue working with <a href="https://laszlojeni.com/lab.html">Dr. Jeni's lab</a> during the spring</li>
                   <li><b>Dec. 2022:</b> <a href="images/grad.jpg">I graduated</a> from the <a href="https://www.pitt.edu">University of Pittsburgh</a></li>
@@ -76,9 +75,27 @@
         </tbody></table>  
         <table style="width:100%;border:0px;border-spacing: 2em 2em;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
-            <tr>
+            <tr onmouseout="dylin_stop()" onmouseover="dylin_start()">
               <td width="40%" valign="middle" style="text-align:right">
-                  <img src="./images/dylin.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
+                <div class="one" style="position: relative;">
+                  <div class="two" id="dylin_mix">
+                    <video width="100%" height="100%" muted="" autoplay="" loop="">
+                      <source src="images/dylin.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/dylin.png" width="100%" style="display: block; margin-left: auto; margin-right: auto; z-index: 0;">
+                </div>
+                <script type="text/javascript">
+                  function dylin_start() {
+                    document.getElementById('dylin_mix').style.opacity = "1";
+                  }
+  
+                  function dylin_stop() {
+                    document.getElementById('dylin_mix').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
               </td>
               <td width="60%" valign="middle">
                   <div class="title">
@@ -98,11 +115,29 @@
               </td>
             </tr>
 
-          <tr>
-              <td width="40%" valign="middle" style="text-align:right">
-                  <img src="./images/chans.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-              </td>
-              <td width="60%" valign="middle">
+              <tr onmouseout="chans_stop()" onmouseover="chans_start()">
+                <td width="40%" valign="middle" style="text-align:right">
+                  <div class="one" style="position: relative;">
+                    <div class="two" id="chan_mix">
+                      <video width="100%" height="100%" muted="" autoplay="" loop="">
+                        <source src="images/Seq.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src="images/chans.png" width="100%" style="display: block; margin-left: auto; margin-right: auto; z-index: 0;">
+                  </div>
+                  <script type="text/javascript">
+                    function chans_start() {
+                      document.getElementById('chan_mix').style.opacity = "1";
+                    }
+    
+                    function chans_stop() {
+                      document.getElementById('chan_mix').style.opacity = "0";
+                    }
+                    refnerf_stop()
+                  </script>
+                </td>
+                <td width="60%" valign="middle">
                   <div class="title">
                       <a href="pdfs/channel_mixing.pdf"><b>Rethinking the Role of Spatial Mixing</b></a>
                   </div>
@@ -116,48 +151,46 @@
                       <b><a href="pdfs/channel_mixing.pdf">[Paper]</a></b>
                   </div>
               </td>
-
-          </tr>
-
-
-          <tr onmouseout="refnerf_stop()" onmouseover="refnerf_start()">
-              <td width="40%" valign="middle">
-                <div class="one">
-                  <!-- <div class="two" id="refnerf_image" style="opacity: 0;"><video width="100%" height="100%" muted="" autoplay="" loop="">
-                  <source src="images/refnerf.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                  </video></div> -->
-                  <img src="images/edit_nerfs2.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;">
-                </div>
-                <script type="text/javascript">
-                  function refnerf_start() {
-                    document.getElementById('refnerf_image').style.opacity = "1";
-                  }
-  
-                  function refnerf_stop() {
-                    document.getElementById('refnerf_image').style.opacity = "0";
-                  }
-                  refnerf_stop()
-                </script>
-                  <!-- <img src="./images/all_grid.png" width="100%" style="display: block; margin-left: auto; margin-right: auto;"> -->
-              </td>
-              <td width="60%" valign="middle">
-                  <div class="title">
-                      <a href="pdfs/automated_editing.pdf"><b>Automated Content Editing in NeRFs</b></a>
+            </tr>
+            <tr onmouseout="edit_stop()" onmouseover="edit_start()">
+                <td width="40%" valign="middle" style="text-align:right">
+                  <div class="one" style="position: relative;">
+                    <div class="two" id="edit_image">
+                      <video width="100%" height="100%" muted="" autoplay="" loop="">
+                        <source src="images/edit_nerf.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <img src="images/edit_nerfs2.png" width="100%" style="display: block; margin-left: auto; margin-right: auto; z-index: 0;">
                   </div>
-                  <div class="authors">
-                      <b>Joel Julin</b>,
-                      <a href="https://heng14.github.io/">Heng Yu</a>,
-                      <a href="https://laszlojeni.com">László Jeni</a>,
-                  </div>
-                  <div class="venue">
-                      <i>2022 RISS Working Paper Journal</i><br>
-                      <b><a href="pdfs/automated_editing.pdf">[Paper]</a> <a href="pdfs/2022-RISS-Automated-Content-Editing-in-NeRFs-Julin-Joel-JENI.pdf">[Poster]</a>
-                        <a href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">[Video]</a></b>
-                  </div>
-              </td>
+                  <script type="text/javascript">
+                    function edit_start() {
+                      document.getElementById('edit_image').style.opacity = "1";
+                    }
+    
+                    function edit_stop() {
+                      document.getElementById('edit_image').style.opacity = "0";
+                    }
+                    refnerf_stop()
+                  </script>
+                </td>
+                <td width="60%" valign="middle">
+                    <div class="title">
+                        <a href="pdfs/automated_editing.pdf"><b>Automated Content Editing in NeRFs</b></a>
+                    </div>
+                    <div class="authors">
+                        <b>Joel Julin</b>,
+                        <a href="https://heng14.github.io/">Heng Yu</a>,
+                        <a href="https://laszlojeni.com">László Jeni</a>,
+                    </div>
+                    <div class="venue">
+                        <i>2022 RISS Working Paper Journal</i><br>
+                        <b><a href="pdfs/automated_editing.pdf">[Paper]</a> <a href="pdfs/2022-RISS-Automated-Content-Editing-in-NeRFs-Julin-Joel-JENI.pdf">[Poster]</a>
+                          <a href="https://drive.google.com/file/d/16x3VeNDzhbyLdOhctWrjB4uudfyZPaZj/view?usp=sharing">[Video]</a></b>
+                    </div>
+                </td>
 
-          </tr>
+            </tr>
           </tbody>
       </table>
       <br>
@@ -173,14 +206,24 @@
         <tbody>
         <tr>
             <td width="50%" valign="middle">
-                <b><a href="https://www.pitt.edu">The University of Pittsburgh</a></b> Pittsburgh,
+                <b><a href="https://www.cmu.edu">Carnegie Mellon University</a></b> Pittsburgh,
                 Pennsylvania<br>
-                B.S. in Computer Science • Aug. 2020 - Dec. 2022<br>
+                M.S. in Robotics • Aug. 2023 - Present<br>
             </td>
             <td width="50%" valign="middle" style="text-align: left;">
-                <img src="./images/pitt.png" width="50%" style="display: block; margin-left: auto; margin-right: auto;" align="left">
+                <img src="./images/cmu_logo.png" width="40%" style="display: block; margin-left: auto; margin-right: auto;" align="left">
             </td>
         </tr>
+        <tr>
+          <td width="50%" valign="middle">
+              <b><a href="https://www.pitt.edu">The University of Pittsburgh</a></b> Pittsburgh,
+              Pennsylvania<br>
+              B.S. in Computer Science • Aug. 2020 - Dec. 2022<br>
+          </td>
+          <td width="50%" valign="middle" style="text-align: left;">
+              <img src="./images/pitt2.png" width="40%" style="display: block; margin-left: auto; margin-right: auto;" align="left">
+          </td>
+      </tr>
 
         </tbody>
     </table>
