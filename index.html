@@ -38,7 +38,7 @@
               </p>
             </td>
             <td style="padding:2.5%;width:40%;max-width:40%">
-              <a><img style="width:70%;max-width:100%" alt="profile photo" src="images/Unknown-3.jpg" class="hoverZoomLink"></a>
+              <a><img style="width:70%;max-width:100%" alt="profile photo" src="images/final-profile.png" class="hoverZoomLink"></a>
             </td>
           </tr>
         </tbody></table>
@@ -76,6 +76,47 @@
         </tbody></table>  
         <table style="width:100%;border:0px;border-spacing: 2em 2em;border-collapse:separate;margin-right:auto;margin-left:auto;">
           <tbody>
+            <tr onmouseout="cogs_stop()" onmouseover="cogs_start()">
+              <td width="40%" valign="middle" style="text-align:right">
+                <div class="one" style="position: relative;">
+                  <div class="two" id="cogs_mix">
+                    <video width="100%" height="100%" muted="" autoplay="" loop="">
+                      <source src="images/cogs-video.mp4" type="video/mp4">
+                      <source src="images/cogs-video.webm" type="video/webm">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/cogs.png" width="95%" style="display: block; margin-left: auto; margin-right: auto; z-index: 0;">
+                </div>
+                <script type="text/javascript">
+                  function cogs_start() {
+                    document.getElementById('cogs_mix').style.opacity = "1";
+                  }
+  
+                  function cogs_stop() {
+                    document.getElementById('cogs_mix').style.opacity = "0";
+                  }
+                  refnerf_stop()
+                </script>
+              </td>
+              <td width="60%" valign="middle">
+                  <div class="title">
+                      <a href="https://arxiv.org/abs/2312.05664"><b>CoGS: Controllable Gaussian Splatting</b></a>
+                  </div>
+                  <div class="authors">
+                    <a href="https://heng14.github.io/">Heng Yu</a>,
+                    <b>Joel Julin</b>, 
+                    <a href="https://www.ri.cmu.edu/ri-people/zoltan-adam-milacski/">Zoltán Milacski</a>,
+                    <a href="https://scholar.google.com/citations?user=AFaeUrYAAAAJ&hl=en">Koichiro Niinuma</a>, and
+                    <a href="https://laszlojeni.com">László Jeni</a>.<br>
+                  </div>
+                  <div class="venue">
+                      <i>In Submission</i><br>
+                      <b><a href="https://arxiv.org/abs/2312.05664">[Paper]</a> <a href="https://cogs2023.github.io">[Project]</a> <a href="https://github.com/Heng14/CoGS/">[Code]</a></b>
+                  </div>
+              </td>
+            </tr>
+
             <tr onmouseout="dylin_stop()" onmouseover="dylin_start()">
               <td width="40%" valign="middle" style="text-align:right">
                 <div class="one" style="position: relative;">
@@ -101,7 +142,7 @@
               </td>
               <td width="60%" valign="middle">
                   <div class="title">
-                      <a><b>DyLiN: Making Light Field Networks Dynamic</b></a>
+                      <a href="https://arxiv.org/abs/2303.14243"><b>DyLiN: Making Light Field Networks Dynamic</b></a>
                   </div>
                   <div class="authors">
                     <a href="https://heng14.github.io/">Heng Yu</a>,
@@ -300,7 +341,8 @@
       <td width="50%" valign="middle">
           <b><a href="https://laszlojeni.com/lab.html">Computational Behavior Lab</a></b>, <b>
             Carnegie Mellon University Robotics Institute</b><br>
-          Research Intern • May 2022 to Present <br>
+          Research Assistant • Aug 2023 to Present <br>
+          Research Intern • May 2022 to Aug. 2023 <br>
           Advisor: <a href="https://laszlojeni.com">László Jeni</a>
       </td>
       <td width="50%" valign="middle" style="text-align: left;">
@@ -336,7 +378,7 @@
 
   <tr>
       <td width="50%" valign="middle">
-          <b><a href="https://spectacle.hackmit.org/project/163">Immersive NeRF</a></b>, <b>
+          <b><a href="https://github.com/anayflima/immersive-NeRF-api">Immersive NeRF</a></b>, <b>
             Massachusetts Institute of Technology</b><br>
             <b><a href="https://github.com/anayflima/immersive-NeRF-api">[Submission]</a></b>
       </td>
